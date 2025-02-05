@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Moderno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Color Picker Moderno</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="card-title mb-0">Selecciona o ajusta tu color</h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- Cuadro de color -->
+                        <div id="color-box" class="mb-4">
+                            <br>
+                            <br>
+                        </div>
+
+                        <!-- Input de tipo color -->
+                        <div class="mb-3">
+                            <label for="color-picker" class="form-label">Selecciona un color:</label>
+                            <input type="color" class="form-control form-control-color" id="color-picker"
+                                value="#000000">
+                        </div>
+
+                        <!-- Controles deslizantes y campos de texto -->
+                        <div class="mb-3">
+                            <label for="red" class="form-label">Rojo</label>
+                            <input type="range" class="form-range" id="red" min="0" max="255" value="0">
+                            <input type="number" class="form-control mt-2" id="red-input" min="0" max="255" value="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="green" class="form-label">Verde</label>
+                            <input type="range" class="form-range" id="green" min="0" max="255" value="0">
+                            <input type="number" class="form-control mt-2" id="green-input" min="0" max="255" value="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="blue" class="form-label">Azul</label>
+                            <input type="range" class="form-range" id="blue" min="0" max="255" value="0">
+                            <input type="number" class="form-control mt-2" id="blue-input" min="0" max="255" value="0">
+                        </div>
+
+                        <!-- Código hexadecimal -->
+                        <div class="mb-3">
+                            <label for="hex-code" class="form-label">Código Hexadecimal</label>
+                            <input type="text" class="form-control text-center fw-bold" id="hex-code" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Color Picker Moderno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
